@@ -15,10 +15,12 @@ PS START-20170824:
 mkdir -p $GOPATH/src/golang.org/x
 cd $GOPATH/src/golang.org/x
 git clone https://github.com/golang/crypto.git
+mv crypto/x/* ./
 
 mkdir -p  $GOPATH/src/golang.org/x/sys/unix
-$GOPATH/src/golang.org/x/sys/unix
+cd $GOPATH/src/golang.org/x/sys/unix
 git clone https://github.com/golang/sys.git
+mv sys/unix/* ./
 ```
 PS END-20170824:
 
